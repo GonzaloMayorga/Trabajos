@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    
+}
+/*-------TIPOGRAFIAS Y ESTILOS--------*/
+.Noto{
+    font-family: 'Noto Sans HK', sans-serif;    
+}
+.fw500{
+    font-weight:500;
+}
+.fw700{
+    font-weight:700;
+}
+
+.parrafo p{
+    font-size: 10pt;
+}
+
+/*--------Colores--------*/
+.fondo {
+    background-color: #060514;
+}
+
+.azulos {
+    background-color: #323286;
+}
+
+.violeta {
+    background-color: #ac6bd6;
+}
+
+.blanco_t {
+    color: whitesmoke;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: rgb(0, 0, 0);
+}
+.naranja{
+    background-color: orange;
+}
+
+#contenedor {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 10%;
+}
+
+#imagen {
+    background-image: url(../img/imagenvioleta.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*--------MEDIDAS DE CONTENEDORES--------*/
+/*anchos*/
+.w50 {
+    width: 50%;
+}
+
+/*alturas*/
+.h400 {
+    height: 400px;
+}
+
+#texto {
+    justify-content: space-around;   
+}
+
+
+
+/*-------ORGANIZACION-----------*/
+
+/* .fl {
+    float: left;
+}
+
+.clearb {
+    clear: both;
+} */
+.sb{
+    justify-content: space-between;
+}
+.pd20{
+    padding: 5%;
+}
+
+.dflex {
+    display: flex;
+}
+.columna{
+    flex-direction: column;
+}
+
+/*-------MEDIA QUERIES--------*/
+/*PARA QUE SEA RESPONSIVE*/
+/*seccion para establecer BREAKPOINTS*/
+
+@media screen and (max-width:667px) {
+    .flexdir {
+        flex-direction: column-reverse;
+    }
+    .w50 {
+        width: 100%;
+    }
+    .colm{
+        flex-direction: column;
+    }
+    #imagen.h400{
+        height: 200px;
+    }
+    .centrar{
+        align-items: center;
+    }
+    #texto.h400{
+        height: 800px;
+    }
+
+}
+
+/* @media screen and (max-width:1024px) {
+    .violeta {
+        background-color: rgb(42, 163, 219);
+        transform: scale(0.5);
+    }
+} */
