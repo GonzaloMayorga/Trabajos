@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     transition: all .5s ease;
-    
+    color: whitesmoke;
+    font-family: 'Noto Sans HK', sans-serif
 }
 /*-------TIPOGRAFIAS Y ESTILOS--------*/
 .Noto{
@@ -28,7 +29,7 @@
 }
 
 .azulos {
-    background-color: #323286;
+    background-color: #212529;
 }
 
 .violeta {
@@ -48,12 +49,7 @@
     background-color: orange;
 }
 
-#contenedor {
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    padding: 10%;
-}
+
 
 #imagen {
     background-image: url(../img/imagenvioleta.jpg);
@@ -64,19 +60,61 @@
 
 /*--------MEDIDAS DE CONTENEDORES--------*/
 /*anchos*/
-.w50 {
-    width: 50%;
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.w100 {
+    width: 100%;
 }
 
 /*alturas*/
-.h400 {
-    height: 400px;
+.h150 {
+    height: 150px;
 }
 
 #texto {
     justify-content: space-around;   
 }
 
+.card {
+	border: solid 1px black;
+	padding: 4px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    background-color:#060514;
+    align-items: center;
+    text-align:center;
+    width: 60%;
+}
+
+#contenedor {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+}
+
+#header-cont {
+	width: 100%;
+	min-height: 10vh;
+	height: auto;
+	justify-content: start;
+	align-items: center;
+	padding-left: 10px;
+}
+#footer-cont{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    line-height: 3em;
+    justify-content: center;
+    align-items: center; 
+
+}
 
 
 /*-------ORGANIZACION-----------*/
@@ -92,7 +130,7 @@
     justify-content: space-between;
 }
 .pd20{
-    padding: 5%;
+    padding: 2%;
 }
 
 .dflex {
