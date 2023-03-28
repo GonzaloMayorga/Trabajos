@@ -96,10 +96,9 @@
 .social-links {
     background-color: whitesmoke;
     padding-right: 10px;
-    gap: 3em;
+    gap: 1em;
     display: flex;
     padding-left: 10px;
-    
     border-radius: 1px 1px;
 }
 .social-links:hover {
@@ -107,8 +106,8 @@
     
 }
 #social-icon {
-	height: 60px;
-	width: 60px;
+	height: 10vh;
+	width: 10vh;
 	/* justify-content: start; */
 	background-color: whitesmoke;
 	border-radius: 18px;
