@@ -81,25 +81,25 @@
 
 .card {
 	border: solid 1px black;
-	padding: 4px;
-    border-radius: 3px;
-    margin-bottom: 1rem;
-    justify-content: space-between;
-    background-color:#060514;
-    align-items: center;
-    text-align:center;
-    width: 60%;
-    transition: 0.5s;
-    padding: 1rem;
-    cursor: pointer;
+	/* padding: 4px; */
+	border-radius: 3px;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+	background-color: #060514;
+	align-items: center;
+	text-align: center;
+	width: 50vw;
+	transition: 0.5s;
+	padding: 1rem;
+	cursor: pointer;
 }
 .social-links {
-    background-color: whitesmoke;
-    padding-right: 10px;
-    gap: 1em;
-    display: flex;
-    padding-left: 10px;
-    border-radius: 1px 1px;
+	background-color: #d4d4d4;
+	padding-right: 10px;
+	gap: 1em;
+	display: flex;
+	padding-left: 10px;
+	border-radius: 1px 1px;
 }
 .social-links:hover {
 	border-radius: 1px 35px;
@@ -109,8 +109,7 @@
 	height: 10vh;
 	width: 10vh;
 	/* justify-content: start; */
-	background-color: whitesmoke;
-	border-radius: 18px;
+	background-color: #d4d4d4;
     cursor: pointer;
 }
 
@@ -136,7 +135,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 10px;
-
+	box-shadow: 0px 0px 8px rgba(0,0,0,.6);
 }
 #footer-cont{
     width: 100%;
