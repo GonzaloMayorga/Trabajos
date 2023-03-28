@@ -55,7 +55,7 @@
     background-image: url(../img/imagenvioleta.jpg);
     background-size: cover;
     background-position: center;
-
+    width: 270px;
 }
 
 /*--------MEDIDAS DE CONTENEDORES--------*/
@@ -88,7 +88,7 @@
 	background-color: #060514;
 	align-items: center;
 	text-align: center;
-	width: 50vw;
+	width: 35vw;
 	transition: 0.5s;
 	padding: 1rem;
 	cursor: pointer;
@@ -102,16 +102,17 @@
 	border-radius: 1px 1px;
 }
 .social-links:hover {
-	border-radius: 1px 35px;
-    
+	border-radius: 1px 35px;  
 }
 #social-icon {
-	height: 10vh;
-	width: 10vh;
-	/* justify-content: start; */
 	background-color: #d4d4d4;
     cursor: pointer;
 }
+
+.height-icon{
+    height: 10vh;
+}
+
 
 .card:hover{
     transition: 0.5s;
@@ -194,7 +195,18 @@
     #texto.h400{
         height: 800px;
     }
-
+    .height-icon{
+        height: 5vh;
+    }
+    .height-links{
+        height: 10vh;
+    }
+    .aling-content{
+        align-items: center;
+    }
+    .wcard{
+        width: 40vh;
+    } 
 }
 
 /* @media screen and (max-width:1024px) {
