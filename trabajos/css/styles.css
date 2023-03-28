@@ -91,6 +91,28 @@
     width: 60%;
     transition: 0.5s;
     padding: 1rem;
+    cursor: pointer;
+}
+.social-links {
+    background-color: whitesmoke;
+    padding-right: 10px;
+    gap: 3em;
+    display: flex;
+    padding-left: 10px;
+    
+    border-radius: 1px 1px;
+}
+.social-links:hover {
+	border-radius: 1px 35px;
+    
+}
+#social-icon {
+	height: 60px;
+	width: 60px;
+	/* justify-content: start; */
+	background-color: whitesmoke;
+	border-radius: 18px;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -106,16 +128,16 @@
     width: 100%;
     min-height: 100vh;
     height: auto;
-
 }
 
 #header-cont {
 	width: 100%;
 	min-height: 10vh;
 	height: auto;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: center;
 	padding-left: 10px;
+
 }
 #footer-cont{
     width: 100%;
