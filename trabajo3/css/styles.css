@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans HK', sans-serif
+    
+}
+body{
+    background-color: whitesmoke;
+}
+.header{
+    position: relative;
+    height: 300px;
+    background-image: url(https://toohotel.com/wp-content/uploads/2022/09/TOO_restaurant_Panoramique_vue_Paris_nuit_v2-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    box-shadow: inset 0 0 150px 20px rgb(34, 30, 30);
+    margin-bottom: 40px;
+}
+.header .welcome{
+    position: absolute;
+    color: white;
+    height: 60px;
+    bottom: 60px;
+}
+.header .busqueda{
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    bottom:-20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 10px rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    
+}
+nav{    
+    background-color: yellow;
+}
+nav ul{
+    height: 100px;
+    background-color: aqua;
+    font-size: 20pt;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;   
+}
+
+nav ul li{
+    flex: 0 0 200px;
+    list-style: none;
+    text-align: center;
+    font-size: 24pt!important;
+    
+}
+.busqueda .icono{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(7, 167, 113);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px 0 0 5px;
+    
+}
+.busqueda input[type="search"]{
+    background-color:transparent;
+    height: 50px;
+    width: calc(100% - 100px);
+    border: 0;
+    padding-left: 14px;
+}
+.busqueda input[type="search"]:focus{
+    border-bottom:  solid 2px aquamarine;
+    outline: none;
+    border-radius: 5px;
+}
+.busqueda input[type="submit"]{
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 0;
+    color: gray;
+}
+.busqueda input[type="submit"]:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.busqueda input[type="submit"]:active{
+    transition: .2s !important;
+    color: aquamarine;
+    transform: scale(1);
+}
+/*-------TIPOGRAFIAS Y ESTILOS--------*/
+.Noto{
+    font-family: 'Noto Sans HK', sans-serif;    
+}
+.fs30{
+    font-size: 30pt!important;
+}
+.fw500{
+    font-weight:500;
+}
+.fw700{
+    font-weight:700;
+}
+
+.parrafo p{
+    font-size: 10pt;
+}
+
+/*--------Colores--------*/
+.fondo {
+    background-color: #060514;
+}
+
+.azulos {
+    background-color: #212529;
+}
+
+.violeta {
+    background-color: #ac6bd6;
+}
+
+.blanco_t {
+    color: whitesmoke;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: rgb(0, 0, 0);
+}
+.naranja{
+    background-color: orange;
+}
+
+
+
+#imagen {
+    background-image: url(../img/imagenvioleta.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+}
+
+/*--------MEDIDAS DE CONTENEDORES--------*/
+/*anchos*/
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/*alturas*/
+.h150 {
+    height: 150px;
+}
+
+#texto {
+    justify-content: space-around;   
+}
+
+.card {
+	border: solid 1px black;
+	/* padding: 4px; */
+	border-radius: 3px;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+	background-color: #060514;
+	align-items: center;
+	text-align: center;
+	width: 35vw;
+	transition: 0.5s;
+	padding: 1rem;
+	cursor: pointer;
+}
+.social-links {
+	background-color: #d4d4d4;
+	padding-right: 10px;
+	gap: 1em;
+	display: flex;
+	padding-left: 10px;
+	border-radius: 1px 1px;
+}
+.social-links:hover {
+	border-radius: 1px 35px;  
+}
+#social-icon {
+	background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+.height-icon{
+    height: 10vh;
+}
+
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-shadow:  5px 5px 10px #5a5a5a,
+    -5px -5px 10px #ffffff;
+}
+
+#contenedor {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#header-cont {
+	width: 100%;
+	min-height: 10vh;
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+}
+#footer-cont{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    line-height: 3em;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+
+/*-------ORGANIZACION-----------*/
+
+/* .fl {
+    float: left;
+}
+
+.clearb {
+    clear: both;
+} */
+.sb{
+    justify-content: space-between;
+}
+.pd20{
+    padding: 2%;
+}
+
+.dflex {
+    display: flex;
+}
+.columna{
+    flex-direction: column;
+}
+
+/*-------MEDIA QUERIES--------*/
+/*PARA QUE SEA RESPONSIVE*/
+/*seccion para establecer BREAKPOINTS*/
+
+@media screen and (max-width:667px) {
+    .flexdir {
+        flex-direction: column-reverse;
+    }
+    .w50 {
+        width: 100%;
+    }
+    .colm{
+        flex-direction: column;
+    }
+    #imagen.h400{
+        height: 200px;
+    }
+    .centrar{
+        align-items: center;
+    }
+    #texto.h400{
+        height: 800px;
+    }
+    .height-icon{
+        height: 5vh;
+    }
+    .height-links{
+        height: 10vh;
+    }
+    .aling-content{
+        align-items: center;
+    }
+    .wcard{
+        width: 40vh;
+    } 
+}
+
+/* @media screen and (max-width:1024px) {
+    .violeta {
+        background-color: rgb(42, 163, 219);
+        transform: scale(0.5);
+    }
+} */
