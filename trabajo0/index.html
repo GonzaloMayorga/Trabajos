@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 		
+	<title>Tp1</title>
+</head>
+<body>
+<style>
+
+body {
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	background-color: #dfdfdf;
+	height: 100%;
+	/* width: 100%; */
+}
+
+img {
+	height: 100%;
+	width: 4%;
+	object-fit: cover;
+}
+#titulo {
+	display: flex;
+	justify-content: start;
+	width: 40%;
+	font-family: Roboto Mono;
+	font-weight:bold;
+}
+.redes {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	gap: 3rem;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+}
+.descrip {
+	display: flex;
+	gap: 0rem;
+	margin: 1%;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	border-bottom: solid black 1px;
+	margin-bottom: 2rem;
+}
+.banner {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+.banner_img {
+	height: 100%;
+	width: 100%;
+}
+.txt {
+	/* word-wrap: break-word; */
+	width: 45%;
+	padding-right: 4%;
+	border-right: solid black 1px;
+}
+.icon {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon_prod {
+	height: 72%;
+	width: 100%;
+	justify-content: center;
+	/* display: flex; */
+	align-items: center;
+}
+.teclado {
+	width: 68%;
+	height: 100%;
+	min-width: 654px;
+	min-height: 490px;
+}
+.card {
+	display: grid;
+	height: 26rem;
+	width: 18.5rem;
+	background-color: #7c77b9;
+	padding: 8px;
+	border-radius: 3px;
+	min-width: 296px;
+	min-height: 430px;
+}
+.obra {
+	display: grid;
+	height: 26rem;
+	width: 18.5rem;
+	background-color: #1282a2;
+	padding: 8px;
+	border-radius: 3px;
+	min-width: 296px;
+	min-height: 430px;
+}
+.obra2 {
+	display: grid;
+	height: 26rem;
+	width: 18.5rem;
+	background-color:  #02c39a;
+	padding: 8px;
+	border-radius: 3px;
+	min-width: 296px;
+	min-height: 430px;
+}
+.obra3 {
+	display: grid;
+	height: 26rem;
+	width: 18.5rem;
+	background-color: #d55d92;
+	padding: 8px;
+	border-radius: 3px;
+	min-width: 296px;
+	min-height: 430px;
+}
+#productos {
+	width: 294px;
+	height: 170px;
+	max-height: 175px;
+	border: solid black 2px;
+}
+.productos {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	border-top: solid black 1px;
+	padding-top: 2rem;
+	border-bottom: solid black 1px;
+	padding-bottom: 2rem;
+}
+.desc_prod{
+	font-family: Roboto Mono;
+}
+.hq_title{
+	font-family: Roboto Mono;
+}
+.desarrolladores {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	/* border-top: solid black 1px; */
+	padding-top: 2rem;
+	border-bottom: solid black 1px;
+	padding-bottom: 2rem;
+}
+.dev {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 31vh;
+	width: 30%;
+	background-color: #161a1d;
+	min-width: 445px;
+	min-height: 240px;
+}
+.dev_icon {
+	width: 95%;
+	height: 85%;
+	justify-content: start;
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+.dev_icon1 {
+	width: 70%;
+	height: 95%;
+	justify-content: start;
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+.dev_icon2 {
+	width: 100%;
+	height: 70%;
+	justify-content: start;
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+.dev_name {
+	background-color: #161a1d;
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-items: start;
+	font-family: Roboto Mono;
+	max-width: 206px;
+	min-width: 206px;	
+}
+.dev_name1 {
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-items: start;
+	font-family: Roboto Mono;
+	max-width: 206px;
+	min-width: 206px;	
+}
+.dev_name2 {
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-items: start;
+	font-family: Roboto Mono;
+	max-width: 206px;
+	min-width: 206px;
+}
+.faker {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.bill {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.amouranth {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+h2 {
+	color: white;
+}
+h3 {
+	color: #9d9d9d;
+	font-size: 20px;
+}
+.credits {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Roboto Mono;
+}
+	
+</style>
+<header>
+	<div id='titulo'>
+			<h1>CUSTOM K-BOARDS</h1>
+	</div>
+
+	<div class="redes">	
+			<img src="house-solid.svg" alt="" >
+			<img src="magnifying-glass-solid.svg" alt="">
+	</div>	
+</header>
+<div class="banner">
+	<img class="banner_img" src="https://thumbs.dreamstime.com/b/teclado-manual-en-el-banner-panor%C3%A1mico-del-port%C3%A1til-manos-macho-tecleando-de-para-laptop-190865263.jpg" alt="">
+</div>
+<div class="descrip">
+	<div class="txt">
+		<p>
+			Lorem ipsum dolor sit amet. Et iste iste vel repudiandae excepturi est quia sequi nam dolores quia! In quia voluptatibus et repudiandae aliquid et doloribus ipsum et rerum quia est explicabo dignissimos quo nihil rerum ea facere adipisci. Vel reiciendis magnam aut voluptatem provident qui voluptatem reprehenderit. Et quam velit rem dignissimos temporibus aut error nostrum cum temporibus eius.
+
+			Sed iste alias eos culpa omnis qui nostrum numquam et consequuntur facilis. Hic culpa repellendus qui quos sint et iste cumque id fugit harum est mollitia rerum aut dicta nihil et maiores alias. A autem minima et voluptas officia ut labore repellendus ut adipisci earum qui sapiente facere.
+
+		</p>
+	</div>
+	<div class="icon">
+		<img class="teclado" src="https://www.destructoid.com/wp-content/uploads/2022/02/txcrxg8uakp51-scaled.jpg?fit=2560%2C1920" alt="">
+	</div>
+</div>
+<div class="productos">
+	<div class="card">
+		<div class="icon_prod">
+			<img id="productos" src="https://www.profesionalreview.com/wp-content/uploads/2022/03/keychron-q2.jpg" alt="">
+		</div>
+			<div class="desc_prod">
+				<p> METAL-KBOARD </p>
+				<p> Lorem ipsum dolor sit amet. Et iste iste vel repu </p>
+			</div>
+	</div>
+
+	<div class="obra">
+		<div class="icon_prod">
+			<img id="productos" src="https://www.cnet.com/a/img/resize/e48e5fbc0eb15bf44811977fd0cdd5523c0efc07/hub/2020/10/01/3e076171-6198-4c9d-915d-2618232fe6fc/ergomech-keyboards-ogi-01.jpg?auto=webp&fit=crop&height=675&width=1200" alt="">
+		</div>
+			<div class="desc_prod">
+				<p> DUAL-KBOARD </p>
+				<p> Lorem ipsum dolor sit amet. Et iste iste vel repu </p>
+			</div>
+	</div>
+
+	<div class="obra2">
+		<div class="icon_prod">
+			<img id="productos" src="https://statics.igg.com/game/1993/goods/2021/04/08/033511_606ec03f987ff5557.jpg" alt="">
+		</div>
+			<div class="desc_prod">
+				<p> ANDROMEDA-STYLE </p>
+				<p> Lorem ipsum dolor sit amet. Et iste iste vel repu </p>
+			</div>
+	</div>
+
+	<div class="obra3">
+		<div class="icon_prod">
+			<img id="productos" src="https://m.media-amazon.com/images/I/71Zg-Vtjo5L.jpg" alt="">
+		</div>
+			<div class="desc_prod">
+				<p> JAPAN-STYLE </p>
+				<p> Lorem ipsum dolor sit amet. Et iste iste vel repu </p>
+			</div>
+	</div>	
+
+
+</div>
+	<div class="staff">
+		<div class="hq_title">
+			<h1>NOSOTROS SOMOS K-BOARDS</h1>
+		</div>
+
+		<div class="desarrolladores">
+			<div class="dev">			
+				<div class="dev_icon">
+					<img class="faker" src="https://www.esportmaniacos.com/wp-content/uploads/2021/04/faker-return.jpg_1355442878-1.jpg" alt="">
+				</div>
+
+				<div class="dev_name">
+					<h2>Lee Sang-Hyeok</h2>
+			
+					<h3>26 años, Seúl, Corea del Sur</h3>
+				</div>
+			</div>
+
+			<div class="dev">			
+				<div class="dev_icon1">
+					<img class="bill" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/10/bill-gates.jpg" alt="">
+				</div>
+
+				<div class="dev_name1">
+					<h2>Bill Gates</h2>
+			
+					<h3>67 años, Seattle, Washington</h3>
+				</div>
+			</div>	
+
+			<div class="dev">			
+				<div class="dev_icon2">
+					<img class="amouranth" src="https://pbs.twimg.com/profile_images/1608197571100528645/ztx8OaK3_400x400.jpg" alt="">
+				</div>
+
+				<div class="dev_name2">
+					<h2>Kaitlyn Michelle</h2>
+			
+					<h3>29 años, Houston, Texas</h3>
+				</div>
+			</div>								
+		</div>
+	</div>
+	<div class="credits">
+		<h1>Trabajo realizado por Gonzalo Mayorga 7mo 1ra</h1>
+	</div>
+</body>
+</html>
