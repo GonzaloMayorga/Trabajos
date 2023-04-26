@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/item.css">
+    <title>Item carta</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
+<body>
+    <section class="item_wrapper">
+        <header class="item background h300">
+            <div class="detalle_imagen"></div>
+            <div class="detalle_precio">
+                <h2>Pollo al horno con </h2>
+                <span class="rate">17.99</span>
+            </div>
+        </header>
+
+        <section class="comments">
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores facere incidunt</h4>
+            <div class="detail">
+                <input type="text" name="comments" placeholder="Add a note (extra sauce, no onions, etc)">
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="addcart">
+                <button onclick="restar()" class="menos material-icons-outlined">-</button>
+                <input type="number" min="1" max="6" step="1" value="1" id="cantidad">
+                <button onclick="sumar()" class="mas material-icons-outlined">+</button>
+                <h2>ADD TO CART</h2>
+            </div>
+        </footer>
+    </section>
+
+</body>
+<script src="js/acciones.js"></script>
+
+</html>

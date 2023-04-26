@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    font-family: 'Noto Sans HK', sans-serif
+}
+body {
+    background-color: whitesmoke;
+}
+.addcart {
+
+    display: flex;
+
+}
+
+.menos,
+
+.mas {
+
+    padding: 10px;
+
+    height: 60px;
+
+    width: 60px;
+
+    
+
+}
+
+
+input[type="number"], p {
+
+    border: 0;
+
+    padding: 10px;
+
+    width: 60px;
+
+    height: 60px;
+
+    line-height: 40px;
+
+    text-align: center;
+
+}
+
+.background{
+    background-image: url(../img/chicken.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 5px 10px #5a5a5a,
+    -5px -5px 10px #ffffff;
+}
+.item_wrapper{
+    position: relative;
+    
+}
+.h300{
+    height: 300px;
+}
+.detalle_precio{
+    position: relative;
+    width: 100%;
+    left: 50%;
+    top: 105%;
+    text-align: center;
+    justify-content: center;
+      
+}
+.rate {
+    position: absolute;
+    background-color: rgb(75, 216, 153);
+    left: 28%;
+    height: 50px;
+    width: 70px;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(230, 230, 230);
+    box-shadow: 0 10px 10px rgb(78, 78, 78);
+    font-size: 16pt;
+    font-weight: bold;
+}
+.detalle_precio h2{
+    position: absolute;
+    left: -45%;
+}
+.comments h4{
+    margin-top: 30%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    color: gray;
+    font-weight: 200;
+}
+.comments input{
+    width: 90%;
+    border: none;
+    margin-top: 40px;
+    border-bottom: solid gray 1px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: whitesmoke;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    line-height: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+footer button{
+    border: none;
+    background-color: rgb(75, 216, 153);
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 3px;
+}
+footer input{
+    background-color: rgb(75, 216, 153);
+    color: white;
+    font-size: 16pt;
+}
+.addcart h2{
+    background-color: rgb(75, 216, 153);
+    text-align: center;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 10px;
+    color: white;
+    border-radius: 3px;
+}
+/*SUBIR O BAJAR VALOR*/
+
+input[type="number"]::-webkit-inner-spin-button,
+
+
+input[type="number"]::-webkit-outer-spin-button {
+
+    -webkit-appearance: none;
+
+    -moz-appearance: textfield;
+
+    margin: 0;
+
+}
