@@ -70,7 +70,12 @@
     background-position: center;
     width: 270px;
 }
-
+#imagen2 {
+    background-image: url(../img/xd.PNG);
+    background-size: cover;
+    background-position: center;
+    width: 270px;
+}
 /*--------MEDIDAS DE CONTENEDORES--------*/
 /*anchos*/
 .wrapper{
